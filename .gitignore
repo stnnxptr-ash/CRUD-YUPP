@@ -1,0 +1,10 @@
+```
+# File sampah sistem &amp; OS
+.DS_Store
+Thumbs.db
+
+# Pengaturan text editor lokal
+.vscode/
+.idea/
+
+```
