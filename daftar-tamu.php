@@ -1,6 +1,6 @@
 <?php
 
-require_once 'koneksi.php';
+require_once 'koneksidatabase.php';
 $sql= "SELECT*FROM tamu ORDER BY id DESC";
 $stmt =  $koneksi ->query($sql);
 $semuatamu= $stmt->fetchAll(PDO::FETCH_ASSOC);
