@@ -4,8 +4,8 @@ require_once 'koneksidatabase.php';
 
 //ini tuh kaya ngecek apakah di ada id nah kalo ada kode akn di ekssekusi 
 //dan dihapus table dari kode kita yangotomatis terhubng itu ke database
-if (isset($GET['id'])) {
-    $id = $GET['id'];
+if (isset($_GET['id'])) {
+    $id = $_GET['id'];
 
     $sql = "DELETE FROM tamu WHERE id = :id";
 

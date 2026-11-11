@@ -19,7 +19,7 @@ $koneksi = new PDO ("mysql:host=$host;dbname=$dbname" , $username, $password);
 
 $koneksi->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-echo "koneksi ke database berhasil";
+//echo "koneksi ke database berhasil";
 
 
 } catch (PDOException $e) {

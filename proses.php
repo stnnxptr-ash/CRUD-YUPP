@@ -27,13 +27,14 @@ $simpan = $stmt->execute([
 ]);
 
 
-if ($simpan) {
-
-echo "<div style='font-family: sans-serif; text-align: center; margin-top: 50px;'>";
-echo "<h2> Terimakasih, data tamu berhasil disimpan!</h2>";
-echo "<a href='index.html'>← Kembali ke Formulir</a>";
-
-
-} else {
-    echo "silahkan isi formulir ini dahulu";
-}
+if ($simpan) { 
+    echo "<div>"; echo "<h2>Terima kasih, data tamu berhasil disimpan!</h2>";
+    echo "<a href='daftar-tamu.php'>← Lihat Daftar Tamu</a> | ";
+    echo "<a href='index.html'>Isi Form Lagi</a>"; 
+    echo "</div>"; 
+} else { 
+        echo "<div>";
+        echo "<h3>Silakan isi formulir pendaftaran terlebih dahulu.</h3>";
+        echo "<a href='index.html'>← Ke Formulir</a>";
+        echo "</div>";
+         } 

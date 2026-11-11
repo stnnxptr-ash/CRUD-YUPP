@@ -120,7 +120,7 @@ $no = 1;
                     <td><?= htmlspecialchars($tamu['nomor_telepon']); ?></td>
                     <td><?= htmlspecialchars($tamu ['tanggal_masuk']); ?></td>
                     <td>
-                        <a href="hapus.php? id=<?= $tamu['id'];?>" 
+                        <a href="hapus.php?id=<?= $tamu['id'];?>" 
                         onclick="return confirm('Apakah kamu yakin akan menghapus data tamu ini?');"
                         style="color: #ef4444; text-decoration: none; font-weight : 600;">Hapus</a>
                     </td>
