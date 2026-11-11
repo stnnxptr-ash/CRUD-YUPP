@@ -98,7 +98,7 @@ $no = 1;
     <div class="container">
         <div class="header">
             <h2>DAFTAR KUNJUNGAN TAMU</h2>
-            <a href="index.htmk" class="btn-tambah">+ isi Buku Tamu</a>
+            <a href="index.html" class="btn-tambah">+ isi Buku Tamu</a>
         </div>
     <table>
         <thead>
@@ -108,6 +108,7 @@ $no = 1;
                 <th>Alamat Email </th>
                 <th>Nomor Telepon</th>
                 <th>Tanggal Masuk</th>
+                <th>Aksi</th>
             </tr>
         </thead>
         <tbody>
@@ -118,6 +119,11 @@ $no = 1;
                     <td><?= htmlspecialchars($tamu['email_pelanggan']); ?></td>
                     <td><?= htmlspecialchars($tamu['nomor_telepon']); ?></td>
                     <td><?= htmlspecialchars($tamu ['tanggal_masuk']); ?></td>
+                    <td>
+                        <a href="hapus.php? id=<?= $tamu['id'];?>" 
+                        onclick="return confirm('Apakah kamu yakin akan menghapus data tamu ini?');"
+                        style="color: #ef4444; text-decoration: none; font-weight : 600;">Hapus</a>
+                    </td>
                 </tr>
             <?php endforeach; ?>
         </tbody>
