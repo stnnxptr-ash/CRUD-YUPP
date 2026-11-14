@@ -123,6 +123,11 @@ $no = 1;
                         <a href="hapus.php?id=<?= $tamu['id'];?>" 
                         onclick="return confirm('Apakah kamu yakin akan menghapus data tamu ini?');"
                         style="color: #ef4444; text-decoration: none; font-weight : 600;">Hapus</a>
+
+                        <a href ="edit.php?id=<?= $tamu['id']; ?>" 
+                        style="color: #0284c7; text-decoration: none; font-weight: 600; margin-right: 10 px;">
+                    Edit
+                    </a>
                     </td>
                 </tr>
             <?php endforeach; ?>
